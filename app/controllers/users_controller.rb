@@ -39,6 +39,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    #mera comment mahan
     @user.destroy
     session[:user_id] = nil
     flash[:notice] = "Account and all associated articles successfully deleted"
